@@ -24,8 +24,13 @@ class BasicCalculator{
                 result = num1 * num2;
                 break;
             case '/':
+                if(num2==0){
+                    System.out.println("Invalid Division");
+                }
+                else{
                 result = num1 / num2;
                 break;
+                }
             default:
                 System.out.println("Invalid operator");
                 return;
